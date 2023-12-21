@@ -1,0 +1,2 @@
+import nomeDaBiblioteca -> Importa todos os componentes
+from nomeDaBiblioteca import nomeDoElementoQueVoceQuerImportar -> Importa só o elemento

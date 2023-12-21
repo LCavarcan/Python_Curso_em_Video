@@ -1,0 +1,43 @@
+Toda cadeia de texto está entre '' ou ""
+
+Fatiamento
+
+    frase = 'Eu amo o Simba'
+    print(frase[0]) -> Vai printar 'E'
+    print(frase[0:5]) -> Vai printar 'Eu a' (de 0 a 4)
+    print(frase[0:11:2]) -> Vai printar 'E m  ' E(u) (a)m(o) (o) (S)
+    print(frase(:5)) -> Vai printar 'Eu a'
+    print(frase(10:)) -> Vai printar 'Simba'
+    print(frase(5::3)) -> Vai printar 'o m'  'o()(o) (S)(i)m(b)(a)'
+
+Análise
+
+    frase = 'Eu amo o Simba'
+    len(frase) -> Tem 14 caracteres
+    frase.count('o') -> Quantas vezes a letra o aparece na frase?
+    frase.count('o', 0, 13) -> Do caracter 0 até o 12, quantas vezes a letra o aparece?
+    frase.find('amo') -> Quantas vezes ele encontrou 'amo' - Vai printar em qual caracter a frase se inicia
+    frase.find('fudeu') -> Retorna o valor -1
+    'Simba' in frase -> Vai informar se é true ou false
+
+Transformação
+
+    frase.replace('Simba', 'Vovó') -> Onde tiver Simba ele substitui por Vovó
+    frase.upper() -> Vai deixar a frase inteira em maiusculo
+    frase.lower() -> Vai deixar a frase inteira em minusculo
+    frase.capitalize() -> Todos os caracteres ficam em minusculo, só o primeiro fica em maiusculo
+    frase.title() -> Todas as primeiras letras de cada palavra ficam maiusculas
+
+    frase = '   Aprenda Python  '
+    frase.strip -> Remove os espaços inuteis deixando 'Aprenda Python'
+    frase.rstrip -> Remove só os espaços da direita
+    frase.lstrip -> Remove só os espaços da esquerda
+
+Divisão
+
+    frase = 'Curso em Vídeo Python'
+    frase.split() -> Gera uma lista com todas as palavras da frase
+
+Junção
+
+    '-'.join(frase) -> Une as palavras da lista com o - entre as palavras
